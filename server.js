@@ -10,8 +10,8 @@ server.listen(port,function(){
 	console.log(port+"Telling Good about Port ");
 
 })
-
-server.listen(port2,function(){
+var server2 = http.createServer(handleRequest);
+server2.listen(port2,function(){
 	console.log("server listning on: http://localhost:%s"+ port2);
 	console.log(port2+"Telling bad about Port ")
 })
